@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FRRoad-task04-定位和居中问题</title>
+    <style>
+    .box {
+        width: 400px;
+        height: 200px;
+        background-color: #ccc;
+        top: 50%;
+        left: 50%;
+        margin-left: -200px;
+        margin-top: -100px;
+        position: absolute;
+    }
+
+    .left-circle{
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+        border-bottom-right-radius: 50px;
+        left:0;
+        top: 0;
+        position: absolute;
+    }
+
+    .right-circle{
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+        border-top-left-radius: 50px;
+        right:0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left-circle"></div>
+        <div class="right-circle"></div>
+    </div>
+</body>
+
+</html>

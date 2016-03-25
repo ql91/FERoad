@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FERoad-task05</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #DEDEDE;
+        font-family: 'Microsoft YaHei';
+    }
+    /*header*/
+    
+    header {
+        width: 100%;
+        background-color: #333333;
+    }
+    
+    .top_l {
+        margin-left: 30px;
+    }
+    
+    .top_r {
+        float: right;
+        margin-right: 30px;
+    }
+    
+    .top_r>li {
+        float: left;
+        margin-left: 30px;
+    }
+    
+    .top_r>li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px;
+    }
+    
+    .top_r>li a:hover {
+        color: grey;
+    }
+    
+    .top_r>li:last-child a {
+        color: grey;
+    }
+    /*center*/
+    
+    .wrap {
+        position: relative;
+    }
+    
+    .wrap_l {
+        margin-right: 420px;
+    }
+    
+    .wrap_r {
+        position: absolute;
+        right: 16px;
+        top: 0;
+        width: 360px;
+        padding: 20px;
+        background-color: #fff;
+        border-right: 2px solid #848484;
+        border-bottom: 2px solid #848484;
+    }
+    
+    .section {
+        margin: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border-right: 2px solid #848484;
+        border-bottom: 2px solid #848484;
+    }
+    
+    .section h2:nth-of-type(2) {
+        font-size: 18px;
+        color: grey;
+    }
+    
+    .section p:nth-of-type(1) {
+        font-size: 14px;
+        color: grey;
+    }
+    
+    .section p:nth-of-type(2),
+    .section p:nth-of-type(3) {
+        text-indent: 2em;
+        line-height: 1.8em;
+    }
+    
+    .section_img {
+        width: 300px;
+        height: 250px;
+    }
+    
+    .ul_one>li{
+        list-style: none;
+        margin: 5px;
+    }
+
+    /* 图片区域 */
+    
+    .section_ul_img ul {
+        padding: 0;
+        overflow: auto;
+    }
+    
+    .section_ul_img ul>li {
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .section_ul_img li {
+        float: left;
+        border: 1px solid #ccc;
+        width: 125px;
+        height: 125px;
+    }
+    
+    .section_ul_img img {
+        width: 100px;
+        height: 80px;
+    }
+    
+    .pic_info {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    /*最后一篇文章区域*/
+
+    ol>li{
+        padding: 2px;
+    }
+
+    .section_table{
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+    }
+
+    .section_table thead{
+        background-color: #333333;
+        color: #fff;
+    }
+
+    .section_table,tr,td{
+        border: 1px solid #CCC; 
+        padding: 4px;
+    }
+
+    .section_table tbody tr:last-child{
+        background-color: #ccc;
+        font-weight: 800;
+    }
+
+    /*侧栏*/
+    #block{
+        position: absolute;
+        display: inline-block;
+        width: 4px;
+        height: 40px;
+        background-color:#CCC;
+        margin-top: 5px;
+    }
+
+    #title{
+        font-size: 16px;
+        margin-left: 14px;
+        letter-spacing: 2px;
+    }
+
+    #formTable{
+        font-size: 12px;
+        margin:10px auto;    
+    }
+
+    #formTable tr,#formTable td{
+        border:none;
+    }
+
+    #formTable tr>td:first-child{
+        text-align: right;
+    }
+    .tip{
+        vertical-align: top;
+    }
+
+    .tips{
+        color:#ccc;
+        margin-top:5px;
+    }
+
+    input[type='email'],input[type='password']{
+        width: 140px;
+    }
+
+    #subBtn{
+        width: 100%;
+        height: 40px;
+        background-color: #3355D0;
+        border:none;
+        border-radius: 10px;
+        font-size: 16px;
+        color:#fff;
+    }
+    
+
+    /*footer*/
+    
+    footer {
+        clear: both;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        background-color: #333333;
+        text-align: center;
+        color: #fff;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../pic/img2.png" alt="logo" class='top_l'>
+        <ul class='top_r'>
+            <li><a href="">导航链接1</a></li>
+            <li><a href="">导航链接2</a></li>
+            <li><a href="">导航链接3</a></li>
+            <li><a href="">导航链接4</a></li>
+        </ul>
+    </header>
+    <div class='wrap'>
+        <div class='wrap_l'>
+            <div class='section'>
+                <h2>文章一级标题</h2>
+                <h2>文章二级标题</h2>
+                <p>文章作者&nbsp;文章发表时间</p>
+                <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落
+                    <br/>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落
+                    <br/> 这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接连接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+                <img src="../pic/team.png" alt="" width="200px" height="200px" class='section_img' />
+                <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落
+                    <br/>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落, 这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接连接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+            </div>
+            <div class='section'>
+                <h2>另外一个文章一级标题</h2>
+                <h2>文章二级标题</h2>
+                <p>文章作者&nbsp;文章发表时间</p>
+                <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落
+                    <br/>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落
+                    <br/>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" target='_blank'>这里有一个链接连接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+                <img src="../pic/team.png" alt="" width="200px" height="200px" class='section_img' />
+                <ul class='ul_one'>
+                    <li>列表项目一</li>
+                    <li>列表项目二</li>
+                    <li>列表项目三</li>
+                </ul>
+            </div>
+            <div class='section section_ul_img'>
+                <h2>图片</h2>
+                <ul style="list-style: none">
+                    <li>
+                        <div class='pic_info'>好看的图片</div>
+                        <img src="../pic/team.png" alt="" /></li>
+                    <li>
+                        <div class='pic_info'>好看的图片</div>
+                        <img src="../pic/team.png" alt="" /></li>
+                    <li>
+                        <div class='pic_info'>好看的图片</div>
+                        <img src="../pic/team.png" alt="" /></li>
+                    <li>
+                        <div class='pic_info'>好看的图片</div>
+                        <img src="../pic/team.png" alt="" /></li>
+                    <li>
+                        <div class='pic_info'>好看的图片</div>
+                        <img src="../pic/team.png" alt="" /></li>
+                    <li>
+                        <div class='pic_info'>好看的图片</div>
+                        <img src="../pic/team.png" alt="" /></li>
+                    <li>
+                        <div class='pic_info'>好看的图片</div>
+                        <img src="../pic/team.png" alt="" /></li>
+                    <li>
+                        <div class='pic_info'>好看的图片</div>
+                        <img src="../pic/team.png" alt="" /></li>
+                    <li>
+                        <div class='pic_info'>好看的图片</div>
+                        <img src="../pic/team.png" alt="" /></li>
+                    <li>
+                        <div class='pic_info'>好看的图片</div>
+                        <img src="../pic/team.png" alt="" /></li>
+                </ul>
+            </div>
+            <div class='section'>
+                <h2>最后一篇文章一级标题</h2>
+                <h2>文章二级标题</h2>
+                <p>文章作者&nbsp;文章发表时间</p>
+                <ol>
+                    <li>排名1</li>
+                    <li>排名2</li>
+                    <li>排名3</li>
+                </ol>
+                <div>下面是一个表格，給表格加了一个border='1'好让你看出是一个表格</div>
+                <table class='section_table'>
+                    <thead>
+                        <tr>
+                            <td>表头</td>
+                            <td>表头</td>
+                            <td>表头</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>表内容单元格</td>
+                            <td>表内容单元格</td>
+                            <td><a href="">操作</a></td>
+                        </tr>
+                        <tr>
+                            <td>表内容单元格</td>
+                            <td>表内容单元格</td>
+                            <td><a href="">操作</a></td>
+                        </tr>
+                        <tr>
+                            <td>表内容单元格</td>
+                            <td>表内容单元格</td>
+                            <td><a href="">操作</a></td>
+                        </tr>
+                        <tr>
+                            <td>表内容单元格</td>
+                            <td>表内容单元格</td>
+                            <td><a href="">操作</a></td>
+                        </tr>
+                        <tr>
+                            <td>总计</td>
+                            <td colspan="2">1000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class='wrap_r'>
+            <span id="block"></span>
+            <h2 id="title">这里以后是一个侧栏，这是侧栏的标题</h2>
+            <form action="">
+                <table cellspacing="10px" id="formTable">
+                    <tr>
+                        <td class='tip'>
+                            <label for="email">请输入邮箱地址:</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" placeholder="这是一个文本输入框" />
+                            <div class="tips">邮箱地址按要求格式输入</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">请输入密码:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="password" placeholder="******" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='tip'>
+                            <label for="passwordAgain">请重复输入密码:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="passwordAgain" placeholder="******" />
+                            <div class="tips">密码请为6-16位英文数字</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>性别:</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" value="男" id="man" />
+                            <label for="man">男</label>
+                            <input type="radio" name="gender" value="女" id="woman" checked="true" />
+                            <label for="woman">女</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">城市:</label>
+                        </td>
+                        <td>
+                            <select name="city" id="city">
+                                <option value="0">北京</option>
+                                <option value="1">重庆</option>
+                                <option value="2" selected="true">杭州</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>爱好:</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="like" id="yd" />
+                            <label for="yd">运动</label>
+                            <input type="checkbox" name="like" id="ys" />
+                            <label for="ys">艺术</label>
+                            <input type="checkbox" name="like" id="kx" />
+                            <label for="kx">科学</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='tip'>
+                            <label>个人描述:</label>
+                        </td>
+                        <td>
+                            <textarea name="personDetail" id="personDetail" cols="28" rows="6">这是一个多行输入框，输入您的个人描述</textarea>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="确认提交" id="subBtn" />
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>2016版权所有&copy;</p>
+    </footer>
+</body>
+
+</html>
