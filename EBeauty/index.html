@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ql作品集-易优美webApp</title>
+    <meta name="descrption" content="ql作品集-易优美webApp">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="../stylesheets/normalize.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/sly.css">
+</head>
+
+<body>
+    <div class="title">易优美webApp<a href="http://ql91.github.io/" target="_blank" id="blog">Blog</a></div>
+    <div class="container">
+        <div class="c-l">
+            <h3>易优美</h3>
+            <p>开发人员: iCode团队
+                <br/><span class="c-l-span">一群热爱编程的小伙伴</span></p>
+            <img src="../pic/worksbg/e-logo.jpg" alt="">
+            <div class="content">
+                <h4 class="content-title">项目简介</h4>
+                <p id="content-p">
+                    优美是一款提供在线预约理发、预约化妆手艺人App 服务系统。消费者可以在App 中浏览丰富的美发化妆资源，可以随时了解到手艺人的忙闲状态以及手艺人地理位置，智能筛选附近手艺人进行下单预约；手艺人可申请开店并管理小店和维护自己的档期供消费者进行预约。(备注:因涉及版权问题只提供作品截图)
+                </p>
+            </div>
+        </div>
+        <div class="c-r">
+           <!--  <h3>屏幕快照</h3> -->
+            <div id="horizontal">
+                <div class="slyWrap example2">
+                    <div class="sly" >
+                        <!--data-options='{ "horizontal": 1, "itemNav": "centered", "dragContent": 1, "scrollBy": 1 }' <ul class="big cfix" data-items="6"></ul> -->
+                        <ul>
+                            <!-- class="big cfix" data-items="10" -->
+                            <li><img src="../pic/worksbg/eb-p3.png" alt=""></li>
+                            <li><img src="../pic/worksbg/eb-p4.png" alt=""></li>
+                            <li><img src="../pic/worksbg/eb-p5.png" alt=""></li>
+                            <li><img src="../pic/worksbg/eb-p6.png" alt=""></li>
+                            <li><img src="../pic/worksbg/eb-p1.png" alt=""></li>
+                            <li><img src="../pic/worksbg/eb-p2.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="scrollbar">
+                        <div class="handle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/ebeauty/vendor/jquery-1.7.2.min.js"></script>
+    <script src="../js/ebeauty/jquery.sly.js"></script>
+    <script src="../js/ebeauty/vendor/plugins.js"></script>
+    <script src="../js/ebeauty/main.js"></script>
+    <script type="text/javascript">
+    (function() {
+        var frames = $('.sly');
+        init(frames);
+
+        function init(el) {
+            var s = el.children('ul').eq(0),
+                p = el.parent();
+            if (s.find('li').length < 2) {
+                el.siblings('.scrollbar').remove();
+                $(".gamed_intro").css("marginTop", "385px");
+                $(".gamed_rule").css("marginTop", "490px");
+            };
+            el.sly({
+                "horizontal": 1,
+                "itemNav": "basic",
+                "dragContent": 1,
+                "scrollBy": 1,
+                "cycleBy": "pages",
+                "cycleInterval": 2000,
+                "startPaused": 1,
+                scrollBar: p.find('.scrollbar')
+            });
+        }
+    })();
+    </script>
+</body>
+
+</html>
