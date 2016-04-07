@@ -67,10 +67,11 @@ ul,li {
 }
 */
     
-    .header-r ul>li:first-child a {
+    .header-r ul>li:hover a {
     color:#e74f4d;
 }
-.header-r ul>li:first-child {
+
+.header-r ul>li:hover {
     color:#e74f4d;
     border-bottom:6px solid #e74f4d;
 }
