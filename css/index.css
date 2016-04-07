@@ -24,15 +24,20 @@
         position: absolute;
         right: 20px;
         color: #fff;
+        // background-color: red;
         transition: all .8s ease-in-out;
         -webkit-transition: all .8s ease-in-out;
-        font-size: 12px;
+        font-size: 16px;
+        font-weight: 700;
     }
     
     #blog:hover {
         color: yellow;
-        transform: translate(-30px, 0);
-        -webkit-transform: translate(-30px, 0);
+        padding-left: 30px;
+        padding-right: 30px;
+        display: inline-block;
+        // transform: translate(-30px, 0);
+        // -webkit-transform: translate(-30px, 0);
     }
     
     .container {
